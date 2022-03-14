@@ -1,3 +1,10 @@
+
+set :stage, :production
+set :rails_env, :production
+set :deploy_to, "/deploy/apps/my_app"
+set :branch, :config_deploy
+server "54.172.179.18", user: "toannn", roles: %w(web app db)
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
